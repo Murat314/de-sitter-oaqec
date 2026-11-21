@@ -3,6 +3,7 @@
 *A Speculative Perspective on a Holographic Universe*
 
 **Murat Durmus** · [Read the manuscript (PDF)](paper/manuscript.pdf) · [LaTeX source](paper/manuscript_de_sitter_oaqec_implications.tex)
+If you’d like the simplest explanation of the paper, start with the [one-page summary in German and English (PDF)](paper/de-sitter-oaqec-einfach-erklaert-de-en.pdf).
 
 ## Author’s preface
 
