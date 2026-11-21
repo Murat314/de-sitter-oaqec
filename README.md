@@ -4,6 +4,16 @@
 
 **Murat Durmus** · [Read the manuscript (PDF)](paper/manuscript.pdf) · [LaTeX source](paper/manuscript_de_sitter_oaqec_implications.tex)
 
+## Author’s preface
+
+Is it reasonable for someone who studied computer science and philosophy, and whose interest in theoretical physics spans twenty years, to write and publish a paper like this with the help of AI? I have asked myself that question throughout this project.
+
+I could not have formulated the equations in this manuscript on my own. I relied on AI for that work and for help with several of the more specialized technical points. My starting point was philosophical. I wanted to give my speculative ideas about spacetime and holography a more precise form and see how much support the mathematics could offer them.
+
+I cannot say with confidence whether I succeeded or whether the work has scientific or philosophical value. That is for readers with deeper expertise in the relevant fields to assess. I would welcome constructive criticism, especially of the assumptions, the mathematical arguments, and the interpretation of the results.
+
+## Overview
+
 The paper asks how much of a local quantum description in de Sitter spacetime can be reconstructed exactly, and what additional assumptions are needed to connect that reconstruction to gravity. Its starting point is a single **causal diamond**, the region determined by a ball on a spatial slice.
 
 ![Radial section of a causal diamond showing its past and future tips, central observer, and spatial slice.](figures/causal-diamond.png)
