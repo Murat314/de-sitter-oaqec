@@ -50,3 +50,11 @@ latexmk -pdf manuscript_de_sitter_oaqec_implications.tex
 ~~~
 
 The [bibliography](paper/references_de_sitter_oaqec_implications.bib) is included alongside the source. The figures in the LaTeX manuscript are drawn in TikZ. The README images are rendered from the included PDF.
+
+## Key takeaways
+
+- **Exact reconstruction for one diamond.** Under the stated assumptions, a type II₁ tracial inclusion code gives complementary reconstruction and preserves relative entropy.
+- **Limits of the construction.** The natural vacuum-compatible embedding into the static patch is obstructed. In the clock example, stationary relative entropy and stationary clock entropy coexist with changing algebraic entropy.
+- **Conditional gravity.** For conformal matter, the Einstein–Hilbert variational identity and fixed-volume entanglement equilibrium across small diamonds yield the linearized semiclassical Einstein equation around de Sitter.
+- **Speculative holography.** A lower-dimensional quantum description might account for compatible observations across different observers. Recovering a common spacetime and its dynamics remains open.
+- **An AI analogy to test.** The paper proposes measuring whether selected features can be recovered after masking groups of activations in a classical model.
