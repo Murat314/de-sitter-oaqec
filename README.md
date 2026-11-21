@@ -40,6 +40,16 @@ The paper gives a concrete reconstruction example for one diamond and a conditio
 
 ![Speculative diagram connecting underlying quantum correlations to two observers, agreement on shared observables, and a possible common spacetime description. Dashed arrows indicate conjectured links.](figures/speculative-worldview.png)
 
+## AI implications
+
+I see three possible directions for AI research that we can draw from this paper.
+
+**Robustness.** If part of a model is switched off, can it still do a specific task? I’d test whether training for recovery helps more than standard dropout when the model encounters failures it hasn’t seen before.
+
+**Interpretability.** Where can we recover a piece of information inside a model, and does the model actually use it? Masking and restoring groups of activations lets us test whether that information changes the answer.
+
+**Shared world models.** More speculatively, could a model’s image and language modules agree about the same scene when each has only part of the information? For example, could both tell which object is in front of the other?
+
 ## Build the manuscript
 
 The manuscript uses LaTeX, BibTeX, and TikZ. With a TeX distribution that includes these packages and latexmk, run:
