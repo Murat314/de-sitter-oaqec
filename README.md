@@ -16,21 +16,21 @@ I cannot say with confidence whether I succeeded or whether the work has scienti
 
 ## Overview
 
-The paper asks how much of a local quantum description in de Sitter spacetime can be reconstructed exactly, and what additional assumptions are needed to connect that reconstruction to gravity. Its starting point is a single **causal diamond**, the region determined by a ball on a spatial slice.
+The paper studies exact reconstruction in an abstract model of a single **causal diamond** on a fixed de Sitter background. A causal diamond is the region determined by a ball on a spatial slice. The paper also asks what physical input would be needed to connect the model to gravity.
 
 ![Radial section of a causal diamond showing its past and future tips, central observer, and spatial slice.](figures/causal-diamond.png)
 
 ## The algebraic construction
 
 - **A finite algebra for one diamond.** Starting with the local quantum field algebra, the paper takes its crossed product by the vacuum modular flow and compresses to the positive-energy sector of an observer clock. The resulting type II₁ factor has a normalized trace.
-- **Exact recovery in a tracial extension.** An explicit inclusion code reconstructs the logical algebra and its commutant and preserves relative entropy. The construction uses an auxiliary matrix factor. The paper also identifies an obstruction to the natural embedding into the static patch that would preserve both the field inclusion and the clock unitaries.
+- **Exact reconstruction in a tracial extension.** An explicit inclusion reconstructs the left and right actions in the standard representation and preserves relative entropy. All logical information stays in the diamond factor, so the model can tolerate discarding the auxiliary matrix factor. A result based on Takesaki’s theorem rules out the particular embedding into the static-patch core that identifies both the field operators and clock unitaries.
 - **A clock counterexample.** The algebraic entropy can change to first order even when both the relative entropy at the reference state and the clock's own entropy are stationary. A physical equilibrium argument must account for changes in the observer's energy.
 
-![Crossed-product construction of the finite clock corner and the embedding and recovery maps of the tracial code.](figures/algebra-and-recovery.png)
+![Crossed-product construction of the finite clock corner and the embedding and compression maps of the tracial extension.](figures/algebra-and-recovery.png)
 
 ## The conditional link to gravity
 
-For conformal matter, the paper combines the matter first law with the Einstein–Hilbert variational identity for a causal diamond. **If** generalized entropy is stationary at fixed volume for all sufficiently small diamonds and timelike directions, the linearized semiclassical Einstein equation follows around the chosen de Sitter background. The diagram highlights the role of this independent equilibrium assumption.
+The paper summarizes the Jacobson–Visser small-diamond argument for conformal matter on a fixed de Sitter background. Given the Einstein area term and fixed-volume entanglement equilibrium for all small diamonds and timelike directions, the variational identity yields the linearized semiclassical Einstein equation. Connecting this argument to the algebraic model would require a gravitational constraint relating changes in the observer’s energy to changes in the area at fixed volume.
 
 ![Dependency diagram linking the matter and gravitational identities and the independent fixed-volume equilibrium assumption to the linearized Einstein equation.](figures/conditional-einstein-equation.png)
 
@@ -38,7 +38,7 @@ For conformal matter, the paper combines the matter first law with the Einstein�
 
 Could a common quantum structure give rise to the local observations of different observers and, eventually, to a shared spacetime description? The final section sketches that possibility. Agreement on overlapping observables would be a consistency requirement. A holographic realization would also need a physically defined lower-dimensional theory that recovers the interior observables and their dynamics.
 
-The paper gives a concrete reconstruction example for one diamond and a conditional link between entropy balance and curvature. These results offer limited theoretical support for the plausibility of a holographic description. The proposed horizon realization and emergence of the geometry remain open. The discussion relates this distinction to Bohm's implicate order and Pribram's work on distributed representation. It also proposes a separate machine-learning experiment on recovering task-relevant features after masking parts of a model's representation.
+The algebraic example illustrates exact reconstruction using the diamond algebra itself. A horizon realization and the emergence of the geometry remain speculative. The paper relates these open questions to Bohm’s implicate order and Pribram’s work on distributed representation. It also proposes a machine-learning experiment on recovering task-relevant features after masking parts of a model’s representation.
 
 ![Speculative diagram connecting underlying quantum correlations to two observers, agreement on shared observables, and a possible common spacetime description. Dashed arrows indicate conjectured links.](figures/speculative-worldview.png)
 
@@ -46,7 +46,7 @@ The paper gives a concrete reconstruction example for one diamond and a conditio
 
 I see three possible directions for AI research that we can draw from this paper.
 
-**Robustness.** If part of a model is switched off, can it still do a specific task? I’d test whether training for recovery helps more than standard dropout when the model encounters failures it hasn’t seen before.
+**Robustness.** If part of a model is switched off, can it still do a specific task? I’d compare a feature-recovery training objective with standard dropout and with an otherwise identical model trained using the same masks and the ordinary task loss. I’d test all three on failures they haven’t seen before.
 
 **Interpretability.** Where can we recover a piece of information inside a model, and does the model actually use it? Masking and restoring groups of activations lets us test whether that information changes the answer.
 
@@ -65,8 +65,8 @@ The [bibliography](paper/references_de_sitter_oaqec_implications.bib) is include
 
 ## Key takeaways
 
-- **Exact reconstruction for one diamond.** Under the stated assumptions, a type II₁ tracial inclusion code gives complementary reconstruction and preserves relative entropy.
-- **Limits of the construction.** The natural vacuum-compatible embedding into the static patch is obstructed. In the clock example, stationary relative entropy and stationary clock entropy coexist with changing algebraic entropy.
-- **Conditional gravity.** For conformal matter, the Einstein–Hilbert variational identity and fixed-volume entanglement equilibrium across small diamonds yield the linearized semiclassical Einstein equation around de Sitter.
+- **Exact reconstruction in the model.** The type II₁ inclusion preserves relative entropy and gives exact reconstruction of the standard-form left and right actions. Its erasure protection covers the auxiliary factor.
+- **Limits of the construction.** Identifying both sets of field operators and clock unitaries in an embedding into the static-patch core is obstructed. In the clock example, stationary relative entropy and stationary clock entropy coexist with changing algebraic entropy.
+- **Conditional gravity.** The Jacobson–Visser argument yields the linearized semiclassical Einstein equation about de Sitter under independent area and fixed-volume equilibrium assumptions.
 - **Speculative holography.** A lower-dimensional quantum description might account for compatible observations across different observers. Recovering a common spacetime and its dynamics remains open.
 - **An AI analogy to test.** The paper proposes measuring whether selected features can be recovered after masking groups of activations in a classical model.

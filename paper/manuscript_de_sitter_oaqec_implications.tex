@@ -66,7 +66,7 @@
 \maketitle
 
 \begin{abstract}
-An observer-dressed local quantum field algebra in de Sitter admits a finite crossed-product corner under the standard type-$\mathrm{III}_1$ and faithfulness hypotheses. We give an explicit operator-algebra quantum error-correcting code for a single such corner in a tracial extension and prove complementary reconstruction and exact relative-entropy preservation. We also show why the natural inclusion of a proper diamond into the static patch cannot intertwine the two vacuum modular flows when the same vacuum vector is cyclic for both algebras. An exact family of clock states illustrates that first-order stationarity of relative entropy allows a nonzero first variation of the type-$\mathrm{II}_1$ entropy, even at stationary clock entropy. For conformal matter we give a separate, conditional gravitational result. Assuming the Einstein area term and fixed-volume entanglement equilibrium for all small diamonds, the causal-diamond variational identity yields the linearized semiclassical Einstein equation about de Sitter. The conditions required for a geometric code embedding and for the entropy equilibrium remain additional input.
+We study the positive-energy type-$\mathrm{II}_1$ clock corner of a single causal diamond on a fixed de Sitter background. A tracial inclusion into an auxiliary tensor extension preserves relative entropy exactly and reconstructs the left and right actions in the standard representation. Its erasure protection covers discarding the auxiliary factor, which carries no logical information. Takesaki's theorem obstructs the map into the static-patch core that identifies both field operators and clock unitaries when the same vacuum is cyclic and separating for the two local algebras. In an explicit clock family the type-$\mathrm{II}_1$ entropy varies at first order while relative entropy and the clock's differential entropy are stationary. Separately, we restate the Jacobson--Visser small-diamond argument for conformal matter about de Sitter, taking the Einstein area term and fixed-volume entropy equilibrium as inputs. A physical realization would have to specify a geometric embedding and a constraint relating clock energy to the area variation.
 \end{abstract}
 
 {\setcounter{tocdepth}{2}\tableofcontents}
@@ -76,9 +76,9 @@ An observer-dressed local quantum field algebra in de Sitter admits a finite cro
 
 Operator-algebra quantum error correction (OAQEC) formalizes the reconstruction of a logical operator algebra and its commutant on complementary physical algebras. In holography, its finite-dimensional form relates complementary reconstruction, relative entropy and the algebraic Ryu--Takayanagi formula \cite{Beny2007a,Almheiri2015,Harlow2017,Jafferis2016}. Infinite-dimensional reconstruction and the role of conditional expectations have been developed in \cite{Kang2019,Faulkner2020}. In continuum quantum field theory (QFT), the local algebras are typically of type $\mathrm{III}_1$ under appropriate hypotheses \cite{Haag1996,Buchholz1987}. This obstructs the use of a trace on the local field algebra itself. Araki relative entropy remains well defined as an extended-valued quantity \cite{Araki1976}.
 
-Chandrasekaran, Longo, Penington and Witten (CLPW) constructed a type-$\mathrm{II}_1$ algebra of observables of the static patch by dressing the fields to an observer. They identified its tracial state with empty de Sitter in their model, and its entropy for a semiclassical class of states with generalized entropy up to a state-independent constant \cite{CLPW2022}. Jensen, Sorce and Speranza developed an extension to more general subregions in semiclassical Einstein gravity, with geometric assumptions on modular flow \cite{Jensen2023}. Separately, Jacobson showed how fixed-volume entanglement equilibrium in small balls leads to the semiclassical Einstein equation for first-order vacuum variations of conformal matter, with additional input needed for nonconformal matter \cite{Jacobson2016}. Jacobson and Visser derived the causal-diamond first law in maximally symmetric spacetimes, including its gravitational volume term \cite{JacobsonVisser2019}.
+Chandrasekaran, Longo, Penington and Witten (CLPW) constructed a type-$\mathrm{II}_1$ algebra of observables of the static patch by dressing the fields to an observer. They identified its tracial state with empty de Sitter in their model, and its entropy for a semiclassical class of states with generalized entropy up to a state-independent constant \cite{CLPW2022}. Jensen, Sorce and Speranza developed an extension to more general subregions in semiclassical Einstein gravity, with geometric assumptions on modular flow \cite{Jensen2023}. Ali Ahmad and Jefferson studied gravity-independent modular crossed products for QFT subregions \cite{AliAhmadJefferson2024}. The corner used here is constructed at that algebraic level. Its interpretation in terms of gravitational entropy requires an additional gravitational constraint. Separately, Jacobson related fixed-volume entanglement equilibrium for small balls to the semiclassical Einstein equation for first-order vacuum variations of conformal matter \cite{Jacobson2016}. Jacobson and Visser developed the causal-diamond first law in maximally symmetric spacetimes, including its volume term \cite{JacobsonVisser2019}.
 
-Here we study the algebraic and gravitational parts of the proposal through a single causal diamond. Section~\ref{sec:corner} gives a finite corner and a precise obstruction to a particular inclusion into the static patch. Section~\ref{sec:code} constructs an explicit tracial code. Section~\ref{sec:entropy} tests the proposed entropy principle in an exact clock sector. Section~\ref{sec:geometry} gives the conditional gravitational implication at first order. Section~\ref{sec:implications} examines the speculative scientific and philosophical implications. We use units $\hbar=c=1$ and metric signature $(-,+,\ldots,+)$.
+For one causal diamond, Section~\ref{sec:corner} applies Takesaki's theorem to a proposed embedding into the static-patch core. Section~\ref{sec:code} illustrates standard-form reconstruction with a minimal tracial inclusion, and Section~\ref{sec:entropy} gives an explicit clock family that tests an inference from entropy stationarity. Section~\ref{sec:geometry} sets out the established gravitational argument to specify the response a physical embedding would have to reproduce. Section~\ref{sec:implications} discusses speculative implications. We use units $\hbar=c=1$ and metric signature $(-,+,\ldots,+)$.
 
 \section{The finite corner of one diamond}
 \label{sec:corner}
@@ -131,8 +131,8 @@ The energy variable $q$ is dimensionless. Its conjugate $p$ is defined on the fu
  \lambda_X(t)\pi_X(x)\lambda_X(t)^*=\pi_X(\sigma_t^X(x)).
  \label{eq:covariance}
 \end{equation}
-This regular representation of the crossed product gives the continuous core
-$\Core_X=\M_X\rtimes_{\sigma^X}\R$. In the dressed description it is the invariant algebra for the action generated by $H_X+q$ on $\M_X\,\bar\otimes\,B(L^2(\R))$. This assertion concerns invariance of observables. The positive-energy clock corner is defined by compression with the spectral projection $\Pi=\one_{[0,\infty)}(q)$ after the crossed product has been formed \cite{Takesaki2003,Witten2022,CLPW2022}.
+The covariance relation follows from $e^{itq}p e^{-itq}=p-t$. In the combined action generated by $H_X+q$, the shift of $p$ cancels the conjugation of $x$ by $e^{itH_X}$, so $\pi_X(x)$ is invariant. This regular representation of the crossed product gives the continuous core
+$\Core_X=\M_X\rtimes_{\sigma^X}\R$, represented as the invariant subalgebra of $\M_X\,\bar\otimes\,B(L^2(\R))$ under that action. The positive-energy clock corner is defined by compression with the spectral projection $\Pi=\one_{[0,\infty)}(q)$ after the crossed product has been formed \cite{Takesaki2003,Witten2022,CLPW2022}.
 
 \begin{proposition}[Finite clock corner]
 \label{prop:corner}
@@ -141,7 +141,7 @@ $\Psi_\tau=\Omega\otimes e^{-q/2}\one_{[0,\infty)}(q)$ in the representation \eq
 \end{proposition}
 
 \begin{proof}
-The continuous core of a type-$\mathrm{III}_1$ factor is a type-$\mathrm{II}_\infty$ factor by the crossed-product structure theorem \cite{Takesaki2003}. In the sign convention \eqref{eq:covariance}, its canonical semifinite trace is represented by the weight obtained by slicing with $\Omega$ and integrating the clock diagonal against $e^{-q}\dd q$, as in the CLPW trace construction \cite[Sec.~2.4]{CLPW2022}. The clock-diagonal formula is understood on positive elements in the domain of the weight. In particular the trace of $\Pi$ is $\int_0^\infty e^{-q}\dd q=1$. Restriction to the corner yields the vector formula and gives a faithful, normal, normalized trace.
+The continuous core of a type-$\mathrm{III}_1$ factor is a type-$\mathrm{II}_\infty$ factor by the crossed-product structure theorem \cite{Takesaki2003}. Its canonical semifinite trace is represented by the weight obtained by slicing with $\Omega$ and integrating the clock diagonal against $e^{-q}\dd q$, as in the CLPW trace construction \cite[Sec.~2.4]{CLPW2022}. The sign agrees with the dual action $\theta_s(\lambda_X(t))=e^{-ist}\lambda_X(t)$: it sends $f(q)$ to $f(q-s)$, and the measure $e^{-q}\dd q$ gives the trace scaling factor $e^{-s}$. On positive elements in the domain of the weight, the clock-diagonal formula therefore assigns $\Pi$ the trace $\int_0^\infty e^{-q}\dd q=1$. Restriction to the corner gives the vector formula and a faithful, normal, normalized trace.
 \end{proof}
 
 Let $\tau_X$ denote this trace and identify the unit of the corner with $\one$. For a normal state represented by a density $\rho$ relative to $\tau_X$, the entropy with this normalization is
@@ -163,12 +163,12 @@ $\sigma_t^P(x)=\sigma_t^D(x)$ for $x\in\M_D$. Hence $\M_D$ would be globally inv
 $E(x)\Omega=e_Dx\Omega$ for $x\in\M_P$. Cyclicity for $\M_D$ implies $e_D=\one$. Since $\Omega$ is separating for $\M_P$, $E(x)=x$ for all $x\in\M_P$. This contradicts proper inclusion.
 \end{proof}
 
-The proposition concerns a specific map between the uncompressed cores. More general maps, including embeddings of corners defined with different observer data, require an explicit construction. A trace-preserving conditional expectation between two finite factors becomes available once a unital inclusion has been established.
+The proposition translates the standard Takesaki argument, with vacuum cyclicity of the smaller algebra, to a particular map between the uncompressed cores. Its conclusion concerns the simultaneous identification of the field representation and clock unitaries. Changes of quantum reference frame can involve different observer algebras and additional relational data \cite{DeVuystEtAl2025}. An embedding of the finite corners for such data would require its own construction. Once a unital inclusion between finite factors is specified, a trace-preserving conditional expectation is available.
 
-\section{Complementary reconstruction in a tracial extension}
+\section{Standard-form reconstruction in a tracial extension}
 \label{sec:code}
 
-The single-diamond corner $\N_D$ serves as the logical algebra. We first state the reconstruction for a general unital inclusion of finite tracial von Neumann algebras and then specify a physical algebra for the model. All algebras in this section act by left multiplication in their trace GNS representations.
+The single-diamond corner $\N_D$ serves as the logical algebra. We first state the reconstruction for a general unital inclusion of finite tracial von Neumann algebras and then specify a tracial extension for the model. The left and right actions in the trace GNS representation furnish an algebra and its commutant. Spatial complementary recovery would require a separate identification of the accessible physical algebras.
 
 \begin{proposition}[Tracial inclusion code]
 \label{prop:code}
@@ -198,12 +198,12 @@ $\tau_{\Palg}(\jmath(a)y)=\tau_{\N}(aE(y))$. In particular $\jmath$ is the traci
 
 For an explicit diamond code choose
 \begin{equation}
- \N=\N_D,qquad \Palg_D=\N_D\,\bar\otimes\,M_2(\C),\qquad
- \jmath(x)=x\otimes\one_2,qquad
+ \N=\N_D,\quad \Palg_D=\N_D\,\bar\otimes\,M_2(\C),\quad
+ \jmath(x)=x\otimes\one_2,\quad
  E=\mathrm{id}_{\N_D}\,\bar\otimes\,\mathrm{tr}_2,
  \label{eq:example}
 \end{equation}
-where $\mathrm{tr}_2$ is the normalized matrix trace. Both algebras are type-$\mathrm{II}_1$ factors. In this model, $V\xi=\xi\otimes\widehat{\one_2}$. The finite matrix algebra is an auxiliary extension chosen to specify a physical algebra for the abstract code. A geometric interpretation of $\Palg_D$ in the de Sitter static patch would require additional input, as illustrated by Proposition~\ref{prop:obstruction}.
+where $\mathrm{tr}_2$ is the normalized matrix trace. Both algebras are type-$\mathrm{II}_1$ factors, and $V\xi=\xi\otimes\widehat{\one_2}$. The code is a noiseless subsystem for discarding the auxiliary matrix factor. All logical information resides in the $\N_D$ factor. The reconstructed right action belongs to the standard-form commutant of the left physical algebra, while the auxiliary factor is a tensor factor of the left algebra. Protection against erasures of logical degrees of freedom would require a different encoding and a specified family of erasures. A geometric realization would also require a map to a physically defined algebra of observables.
 
 Figure~\ref{fig:code} shows the construction of the logical algebra and the two maps for this tracial extension.
 
@@ -236,30 +236,22 @@ Figure~\ref{fig:code} shows the construction of the logical algebra and the two 
      $E=\mathrm{id}_{\N_D}\,\bar\otimes\,\mathrm{tr}_2$\\[.45ex]
      $E\circ\jmath=\mathrm{id}_{\N_D}$};
 \end{tikzpicture}
-\caption{Construction of the finite corner and the explicit tracial inclusion code. The arrows between $\N_D$ and $\Palg_D$ act on observables. The map $E$ implements their trace-preserving compression to the logical algebra, and the associated encoding of states preserves relative entropy as in \eqref{eq:pres}. The auxiliary matrix factor specifies the abstract physical algebra in \eqref{eq:example}.}
+\caption{Construction of the finite corner and the tracial inclusion. The map $E$ compresses observables to the logical algebra, and encoding states by precomposition with $E$ preserves relative entropy as in \eqref{eq:pres}. The encoded states share a fixed tracial state on the auxiliary factor.}
 \label{fig:code}
 \end{figure}
 
-The entropy of $\jmath(\rho)$ computed with the normalized physical trace equals the entropy of $\rho$. For faithful densities this follows from functional calculus and trace preservation, with the general case obtained using $s\log s=0$ at $s=0$. Thus this particular code has no state-dependent area contribution in its tracial entropy. An area term in generalized entropy must enter through an independent gravitational identification.
-
-For completeness, a differentiable family of isometries on fixed Hilbert spaces satisfies, with $P_0=V_0V_0^*$,
-\begin{equation}
- \dot V=-iV_0K+(\one-P_0)\dot V,\qquad K=iV_0^*\dot V=K^*.
- \label{eq:isometry}
-\end{equation}
-For a fixed reconstructed bounded operator $O$, write $OV_0=V_0a$ and $O^*V_0=V_0a^*$. Then
-$\frac{\dd}{\dd s}(V_s^*OV_s)|_{0}=i[K,a]$. This calculation determines the kinematical rotation of an already reconstructed operator. A family of metrics, algebras and geometric area observables would also require a prescription for how the physical observable and its representation vary.
+For any inclusion in Proposition~\ref{prop:code}, the normalized physical trace gives the same entropy for $\jmath(\rho)$ as the logical trace gives for $\rho$. This follows from functional calculus with $s\log s=0$ at $s=0$ and trace preservation. An area term in generalized entropy must therefore enter through an independent gravitational identification.
 
 \section{Entropy variation and an exact clock example}
 \label{sec:entropy}
 
-Let $\rho_s$ be a differentiable family of states in a finite tracial algebra, with reference density $\rho_0$. Whenever $D_\tau(\rho_s\Vert\rho_0)$ is finite and differentiable at its minimum $s=0$, its derivative is zero. The identity
+Let $\rho_s$ be a differentiable family of state densities in a finite tracial algebra, with faithful reference density $\rho_0$. The operator $K_0=-\log\rho_0$ may be unbounded. Where the entropy and the expectation of $K_0$ are both finite,
 \begin{equation}
  D_\tau(\rho_s\Vert\rho_0)
    =-S_\tau(\rho_s)+\tau(\rho_sK_0),\qquad K_0=-\log\rho_0
  \label{eq:first-law}
 \end{equation}
-gives $\delta S_\tau=\delta\langle K_0\rangle$ where the two terms have finite derivatives. At the trace density $\rho_0=\one$, $K_0=0$. For a general reference density, the modular expectation can vary. The following family makes this distinction explicit even when the clock's differential entropy has zero first variation.
+If both terms are differentiable at $s=0$, the relative entropy is stationary there by minimality, and $\delta S_\tau=\delta\langle K_0\rangle$. At the trace density $\rho_0=\one$, $K_0=0$. For a general reference density, the modular expectation can vary. The following family makes this explicit even when the clock's differential entropy has zero first variation.
 
 \begin{proposition}[Clock entropy and type-$\mathrm{II}_1$ entropy]
 \label{prop:clock}
@@ -288,13 +280,15 @@ The compressed linear span of these generators is ultraweakly dense. Therefore t
  \label{eq:clock-entropy}
 \end{equation}
 
-Take $w_0(q)=c_\eps e^{-\eps^2 q^2}$ with $\eps>0$ and $c_\eps$ fixed by normalization. Choose a nonnegative smooth bump $\chi$ supported inside $(0,\infty)$ and positive on an interval. Let $b(q)$ be the residual of $q$ after its orthogonal projection onto $\operatorname{span}\{1,q^2\}$ in $L^2(\chi\dd q)$. Then $h=\chi b$ is smooth and compactly supported, $\int h=\int q^2 h=0$, and $\int qh=\int\chi b^2>0$. For sufficiently small positive and negative $s$, $w_s=w_0+sh$ is positive and normalized. Since $\log w_0$ is affine in $q^2$, $\delta\Sobs=-\int h(1+\log w_0)\,\dd q=0$. Formula~\eqref{eq:clock-entropy} gives the last assertion of \eqref{eq:counter}. The density operators commute in the clock subalgebra, so their relative entropy is $\int_0^\infty w_s\log(w_s/w_0)\,\dd q$. Its derivative is $\int h=0$.
+Take $w_0(q)=c_\eps e^{-\eps^2 q^2}$ with $\eps>0$ and $c_\eps$ fixed by normalization. Choose a nonnegative smooth bump $\chi$ supported inside $(0,\infty)$ and positive on an interval. Let $b(q)$ be the residual of $q$ after its orthogonal projection onto $\operatorname{span}\{1,q^2\}$ in $L^2(\chi\dd q)$. Then $h=\chi b$ is smooth and compactly supported, $\int h=\int q^2 h=0$, and $\int qh=\int\chi b^2>0$. The ratio $h/w_0$ is bounded and compactly supported, so $w_s=w_0+sh$ is positive and normalized for sufficiently small $|s|$, and the entropy integrals can be differentiated on that support. The Gaussian tails also give a finite expectation of $K_0(q)=\eps^2 q^2-q-\log c_\eps$. Since $\log w_0$ is affine in $q^2$, $\delta\Sobs=-\int h(1+\log w_0)\,\dd q=0$. Formula~\eqref{eq:clock-entropy} gives the last assertion of \eqref{eq:counter}. The density operators commute in the clock subalgebra, so their relative entropy is $\int_0^\infty w_s\log(w_s/w_0)\,\dd q$. Its derivative is $\int h=0$.
 \end{proof}
 
 The example changes the clock at fixed QFT vacuum and uses only the local algebra. It demonstrates that first-order stationarity of relative entropy, even with stationary clock entropy, does not enforce stationarity of $S_{\tau_D}$. If an area variation compensates or constrains a clock variation in a gravitational model, that relation is independent input.
 
 \section{Fixed-volume equilibrium and the linearized equation}
 \label{sec:geometry}
+
+This section specializes the small-diamond entanglement-equilibrium argument of Jacobson and Jacobson--Visser to a fixed de Sitter background \cite{Jacobson2016,JacobsonVisser2019}. It specifies the first-order gravitational response that a physical realization of the clock construction would have to reproduce.
 
 Let $g^{(0)}$ be the de Sitter metric and $\Lambda=(d-1)(d-2)/(2\lDS^2)>0$. We take $\Lambda$ to include the renormalized vacuum contribution proportional to $g^{(0)}$ so that $G_{\mu\nu}[g^{(0)}]+\Lambda g^{(0)}_{\mu\nu}=0$. The surviving matter source in what follows is the vacuum-subtracted, renormalized first variation. The background data are a point $p$, a future unit timelike vector $u$ at $p$, a sufficiently small geodesic ball $\Sigma_R$ in the time-symmetric slice normal to $u$, and its edge $B_R$. Write $A$ and $\Vol$ for the area and proper volume and $k$ for the trace of the extrinsic curvature of $B_R$ in $\Sigma_R$ with the outward normal. The conformal Killing field $\xi$ of the diamond is future-directed in the interior and vanishes at $B_R$. Its surface gravity magnitude is $\kappa$, and $n$ is the future unit normal of $\Sigma_R$. Rescaling $\xi$ rescales $\kappa$ by the same positive factor.
 
@@ -325,6 +319,12 @@ For the purely geometric term, $\delta A-k\,\delta\Vol$ is the fixed-volume area
  \label{eq:equilibrium}
 \end{equation}
 This assumption concerns simultaneous geometric and state variations in the leading Einstein effective description.
+
+The finite clock corner and the tracial code supply neither the area term nor the equilibrium condition in \eqref{eq:equilibrium}. To see the missing step, consider identifying the variations in \eqref{eq:clock-entropy} and \eqref{eq:equilibrium} along an admissible joint variation with stationary clock and matter entropies. In the clock normalization of Section~\ref{sec:corner}, this identification would require
+\[
+ -\delta\langle q\rangle=\frac{\delta A-k\,\delta\Vol}{4\GN}.
+\]
+This is a matching condition for such variations. A derivation would have to specify the gravitational constraint and its boundary charge for the diamond. In the static-patch construction of CLPW, the analogous identification uses the horizon-area response to observer energy in a semiclassical regime \cite[Sec.~3.2]{CLPW2022}. For general subregions, Jensen, Sorce and Speranza use gravitational constraints with assumptions on modular flow \cite{Jensen2023}. Here the conditional calculation uses \eqref{eq:equilibrium} directly.
 
 Figure~\ref{fig:equilibrium-logic} summarizes how the variational identities and the equilibrium assumption enter Theorem~\ref{thm:einstein}.
 
@@ -368,7 +368,7 @@ Figure~\ref{fig:equilibrium-logic} summarizes how the variational identities and
 \label{fig:equilibrium-logic}
 \end{figure}
 
-\begin{theorem}[Conditional small-diamond equation]
+\begin{theorem}[The Jacobson--Visser small-diamond equation on de Sitter]
 \label{thm:einstein}
 Assume \eqref{eq:matter-law} and the Einstein area term in \eqref{eq:equilibrium}. If \eqref{eq:equilibrium} holds to leading small-ball order for every $p$ and every future unit timelike $u$, then the smooth first variations satisfy
 \begin{equation}
@@ -400,9 +400,9 @@ $\Omega_{d-2}\int_0^R r^{d-2}(R^2-r^2)/(2R)\,\dd r$.
 Leading-order equilibrium implies $F(u,u)=0$ for every unit future timelike $u$. By homogeneity the quadratic form vanishes on the open timelike cone, hence $F=0$. The converse follows directly from \eqref{eq:integral}.
 \end{proof}
 
-The limit in the proof identifies a coefficient in a continuum small-ball expansion. Its effective physical interpretation requires radii large compared with the short-distance cutoff and small compared with $\lDS$ and the variation scales of the sources. This argument takes $\Lambda$ from the chosen comparison geometry. If the entropy variation is known only up to a scalar term in the contraction, the corresponding tensor equation can contain a multiple of $g^{(0)}$. With a conserved vacuum-subtracted source, the linearized Bianchi identity makes that multiple constant. Fixing its value then requires a choice of background or of the renormalized cosmological constant \cite{Jacobson2016,JacobsonVisser2019}.
+The limit in the proof identifies a coefficient in a continuum small-ball expansion. Its effective physical interpretation requires radii large compared with the short-distance cutoff and small compared with $\lDS$ and the variation scales of the sources. This argument takes $\Lambda$ from the chosen comparison geometry. A scalar ambiguity in the entropy variation would add a term proportional to $g^{(0)}_{\mu\nu}$, of the form of a shift $\delta\Lambda\,g^{(0)}_{\mu\nu}$. With a conserved vacuum-subtracted source, the linearized Bianchi identity makes this shift constant. The coefficient of $\delta g_{\mu\nu}$ is the background $\Lambda$ already present in the variational identity \cite{Jacobson2016,JacobsonVisser2019}.
 
-The pointwise metric comparison in Riemann normal coordinates offers a separate geometric observation. If $g$ and $g^{(0)}$ have the same metric and first derivatives at $p$ in a shared chart, then the difference of their Einstein tensors at $p$ is the linearized Einstein tensor of $g-g^{(0)}$ there. Indeed, the second-derivative part of curvature is linear with coefficients fixed by the common metric at $p$, and the connection-product terms agree. Extending Theorem~\ref{thm:einstein} by this observation would still require a comparison of states and entropies on the two geometries and an equilibrium statement valid for the corresponding variations.
+The pointwise metric comparison in Riemann normal coordinates offers a separate geometric observation. If $g$ and $g^{(0)}$ have the same metric and first derivatives at $p$ in a shared chart, then the difference of their Einstein tensors at $p$ is the linearized Einstein tensor of $g-g^{(0)}$ there. The second-derivative part of curvature is linear with coefficients fixed by the common metric at $p$, and the connection-product terms agree. In this chart $\delta g(p)=0$, and the cosmological term at $p$ comes from $G[g^{(0)}](p)=-\Lambda g^{(0)}(p)=-\Lambda g(p)$. Extending Theorem~\ref{thm:einstein} by this observation would require a comparison of states and entropies on the two geometries and an equilibrium statement for the corresponding variations.
 
 \section{Discussion}
 \label{sec:limits}
@@ -418,9 +418,9 @@ For a twice differentiable density path in the operator norm, with bounded densi
 \end{equation}
 Each integrand is the trace of the square of the self-adjoint operator
 $(\rho_0+t\one)^{-1/2}\dot\rho_0(\rho_0+t\one)^{-1/2}$.
-The term involving $\dd^2\rho_s/\dd s^2$ drops out because the first derivative of relative entropy at the reference vanishes on normalized tangents. For a fixed embedding of Proposition~\ref{prop:code}, \eqref{eq:pres} gives the same Hessian in the logical and physical descriptions. A relation to canonical gravitational energy in de Sitter would require a geometric identification of the states, the correct diamond symplectic data and a corresponding equality of quadratic forms. The holographic AdS calculation provides a comparison under its own assumptions \cite{Hollands2013,LashkariVanRaamsdonk2016,Faulkner2017}.
+Normalization $\tau(\rho_s)=1$ implies $\tau(\ddot\rho_0)=0$, which removes the term linear in $\dd^2\rho_s/\dd s^2$ at the reference. The half-Gaussian reference of Proposition~\ref{prop:clock} has density tending to zero as $q\to\infty$. For that commuting family the second derivative instead follows directly from $\int w_s\log(w_s/w_0)\,\dd q$ and equals $\int h^2/w_0\,\dd q$, finite by compact support. Whenever the Hessian exists, \eqref{eq:pres} gives equality in the logical and physical descriptions for a fixed embedding. A relation to canonical gravitational energy in de Sitter would require a geometric identification of the states, the diamond symplectic data and a corresponding equality of quadratic forms. The holographic AdS calculation provides a comparison under its own assumptions \cite{Hollands2013,LashkariVanRaamsdonk2016,Faulkner2017}.
 
-For an already specified decreasing family of unital finite algebras, restriction of states and of a compatible normalized trace gives monotonicity of $D(\rho\Vert\one)$ by data processing. To interpret this as a generalized second law, one must construct a family of horizon-cut algebras, a compatible reference and a geometric entropy identification across cuts. Applying the half-sided modular construction to the trace vector alone gives trivial modular unitaries and hence a zero generator by the modular-generator difference. In a proper unital tracial inclusion the trace vector on the larger GNS space is also noncyclic for the smaller algebra. The usual Borchers--Wiesbrock hypotheses require a common cyclic and separating vector \cite{Borchers1992,Wiesbrock1993}.
+For an already specified decreasing family of unital finite algebras, restriction of states and of a compatible normalized trace gives monotonicity of $D_\tau(\rho\Vert\one)$ by data processing. A generalized second law would require horizon-cut algebras, a compatible reference state and a geometric entropy identification across cuts. The trace vector gives trivial modular unitaries, and in a proper unital tracial inclusion its orbit under the smaller algebra is confined to a proper subspace. Where the underlying QFT vacuum and the type-$\mathrm{III}$ cut algebras satisfy the Borchers--Wiesbrock hypotheses, their modular inclusion is a separate construction \cite{Borchers1992,Wiesbrock1993}. Lifting it to the finite corners would require compatible embeddings and clock projections across cuts.
 
 The quantum focusing conjecture concerns functional variations with respect to independently movable null generators of a cut \cite{Bousso2016}. Its derivation requires control beyond a single parameter of cut motion, along with the relevant geometry and renormalization. Ceyhan and Faulkner's QFT result supplies a comparison for the quantum null energy condition under specified modular and energy hypotheses \cite{Ceyhan2020}. Chandrasekaran and Flanagan construct horizon-cut algebras with gravitational corner degrees of freedom and analyze generalized entropy and focusing in perturbative gravity \cite{ChandrasekaranFlanagan2026}. Such a construction provides additional physical structure for this question. Likewise, higher-curvature counterterms call for the corresponding entropy functional and generalized volume in the gravitational identity \cite{Bueno2017,Dong2014}. They are independent of corrections to any particular clock wavepacket.
 
@@ -435,7 +435,7 @@ Gravitational holography poses a dimensional question in addition to these quest
 
 \section{Conclusion}
 
-A finite corner supplies a trace and an explicit tracial code for one diamond. The clock example identifies a concrete limit of the algebraic entropy argument, and the modular-flow obstruction identifies a constraint on embedding the code into the static patch. With the area term and fixed-volume equilibrium supplied independently, the causal-diamond identity recovers the linearized semiclassical Einstein equation with the cosmological constant of the comparison background. A geometric OAQEC derivation of equilibrium would require a physical embedding that determines the allowed joint variations of state, observer and geometry.
+A finite corner supplies a trace for one diamond. The auxiliary tensor extension illustrates exact standard-form reconstruction and relative-entropy preservation. The modular-flow obstruction constrains a particular choice of embedding into the static-patch core, and the clock example distinguishes stationarity of relative entropy from stationarity of the algebraic entropy. The Jacobson--Visser calculation sets the first-order gravitational response under independent area and fixed-volume equilibrium assumptions. Connecting these results physically would require an embedding into a specified algebra of observables and a constraint on joint variations of state, clock and geometry.
 
 \section{Speculative implications}
 \label{sec:implications}
@@ -450,21 +450,21 @@ The conditional small-diamond equation identifies the response that such a model
 
 \subsection{Relevance to a holographic universe}
 
-If the framework withstands scrutiny, it provides limited theoretical support for the plausibility of the hypothesis that our universe may be holographic. The support is structural. The model explicitly reconstructs the observables of one diamond and preserves relative entropy under the encoding. Separately, the conditional gravitational result relates entropy balance to local curvature response. These are properties one would seek in a holographic description. They sit alongside the independent result that the entropy of certain observer-dressed states in the de Sitter static patch matches generalized entropy, which includes a term proportional to horizon area \cite{Bousso2002,CLPW2022}.
+A holographic interpretation is motivated by two structures: reconstruction with relative-entropy preservation, illustrated here by a tensor extension, and the area contribution to generalized entropy, which CLPW identifies in an independent semiclassical static-patch model \cite{Bousso2002,CLPW2022}. The construction here uses the bulk diamond algebra itself inside the tensor extension. Giving it a holographic interpretation would require a physically specified lower-dimensional algebra that reproduces interior observables and dynamics and gives compatible descriptions for different observers.
 
-A stronger case would require a physically specified lower-dimensional theory that reproduces interior correlations and dynamics and yields consistent descriptions for different observers. In the example here the physical algebra is an abstract tracial extension with an auxiliary matrix factor. The prospect that such an algebra is realized on a horizon remains speculative. A claim about our universe would also require connecting the idealized de Sitter setting to a realistic cosmology. The present support is therefore a statement about the structure of a model and its compatibility with the holographic hypothesis.
+A connection to our universe would further require a realistic cosmological setting in which the proposed identification can be tested. The present results specify properties such a theory should account for. Their realization in a holographic universe remains speculative.
 
 \subsection{Possible implications for AI development}
 
-For classical AI systems, the transferable idea is to specify \emph{which quantities should remain recoverable} and under \emph{which losses of access}. Work on feature superposition in toy neural networks illustrates how a representation can encode several features in overlapping directions \cite{Elhage2022}. Inspired by the recoverability question in OAQEC, one could train a model to preserve a prespecified set of task-relevant features or outputs after selected groups of activations are masked. A controlled experiment would compare matched-capacity models with and without this training objective, measuring recovery after random and structured erasures on held-out data. This could test whether the objective improves robustness or makes the scope of a model's recovery easier to characterize.
+For classical AI systems, the analogy suggests specifying \emph{which quantities should remain recoverable} and under \emph{which losses of access}. Work on feature superposition in toy neural networks illustrates how a representation can encode features in overlapping directions \cite{Elhage2022}. One could train a model with an extra loss for recovering prespecified task-relevant features after masking groups of activations. Compare standard dropout \cite{SrivastavaEtAl2014}, structured masking with the ordinary task loss, and the same structured masking with the extra feature-recovery loss. Match model size and training budget, and measure both feature recovery and task performance on held-out data and unseen mask patterns. The comparison with structured masking alone isolates the contribution of the extra loss.
 
-This proposal is an analogy for designing an experiment in classical machine learning. The exact recovery in the example of Section~\ref{sec:code} follows from a particular trace-preserving inclusion, where the encoded observables act trivially on the auxiliary factor. Any gains under ablations of a learned, distributed representation would have to be demonstrated independently.
+In Section~\ref{sec:code}, exact recovery comes from placing all logical information in the unaffected factor. Robustness of learned, distributed representations under activation masking is an empirical question.
 
 \subsection{Philosophical implications}
 
 A construction that recovers geometry and causal relations from an underlying quantum structure would strengthen the case that spacetime can be emergent. A functionalist reading would ask whether that structure can recover the roles through which spacetime is measured, including clock readings, signal propagation, and agreement on local events \cite{LamWuthrich2018}. This gives mathematical content to a question suggested by Bohm's implicate order in Section~\ref{sec:historical-analogies}. How could a more comprehensive description give rise to stable, apparently local structure? The present construction begins with a chosen geometry, so the emergence of that geometry is a further theoretical question.
 
-The observer clock also makes a relational question precise. A clock fixes how an observable is defined for a particular observer. If different observers' algebras could be consistently related on overlaps, one could explain how their perspectives yield a common account of physical events. Even if a bulk description and a lower-dimensional description were found to reproduce the same observations, the question of which description is more fundamental would remain philosophical.
+The observer clock also makes a relational question precise. A clock fixes how observables are defined for a particular observer. De Vuyst and colleagues develop a crossed-product formalism for changing between quantum reference frames, with observer-dependent algebras and entropies \cite{DeVuystEtAl2025}. Recovering a shared spacetime description would additionally require a rule for comparing these observables across overlapping diamonds and recovering the causal relations among them. Even if a bulk description and a lower-dimensional description reproduced the same observations, the question of which description is more fundamental would remain philosophical.
 
 Figure~\ref{fig:speculative-worldview} sketches a possible direction of explanation, from quantum relations to the descriptions available to individual observers. Agreement on shared observables would be a consistency condition for a common spacetime description. Recovering its causal structure and dynamics would require a further derivation.
 
